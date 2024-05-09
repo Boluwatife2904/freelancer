@@ -26,7 +26,7 @@ body {
 }
 
 .app-container {
-    @apply max-w-[1280px] mx-auto;
+    @apply w-full max-w-[1360px] px-5 md:px-10 mx-auto;
 }
 
 ul {

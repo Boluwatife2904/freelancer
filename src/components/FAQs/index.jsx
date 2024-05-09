@@ -37,7 +37,9 @@ function FAQs() {
     return (
         <section className="bg-[#FE5824] pt-[80px] pb-[92px]">
             <div className="flex flex-col gap-6 md:gap-16 lg:gap-[76px]">
-                <h1 className="app-container w-full text-3xl sm:text-[64px] xl:text-[128px] text-white font-medium leading-none pl-5 md:pl-0">FAQ’S</h1>
+                <div className="app-container">
+                    <h1 className="text-3xl sm:text-[64px] xl:text-[128px] text-white font-medium leading-none">FAQ’S</h1>
+                </div>
                 <Accordion faqs={faqs} />
             </div>
         </section>

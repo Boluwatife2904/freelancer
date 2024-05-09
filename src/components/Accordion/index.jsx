@@ -9,7 +9,7 @@ function AccordionItem({ question, answer, isOpen = false, handleToggle }) {
         <div className="w-full py-4 px-5 md:px-10 border-b border-[#DCDCDC] overflow-hidden first:border-t">
             <div className="app-container flex justify-between items-start gap-3 cursor-pointer" onClick={handleToggle}>
                 <p className="text-white font-light text-base md:text-xl lg:text-[24px]">{question}</p>
-                <button className={`text-white text-lg md:text-[24px] transition-transform duration-100 ${isOpen ? "-rotate-90" : ""}`}>
+                <button className={`text-white text-lg md:text-[24px] transition-transform duration-300 ${isOpen ? "-rotate-90" : ""}`}>
                     <Icon icon="heroicons:arrow-down-right" />
                 </button>
             </div>

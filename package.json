@@ -12,6 +12,7 @@
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "iconsax-react": "^0.0.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

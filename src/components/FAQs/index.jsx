@@ -2,32 +2,32 @@ import Accordion from "../Accordion";
 
 const faqs = [
     {
-        key: "1",
+        id: "1",
         question: "What amenities are included in the coworking space",
         answer: "At Freelancer, we offer high-speed internet access, dedicated workstations, meeting rooms, printing and scanning facilities, kitchen and refreshment area, lounge and relaxation spaces, and on-site staff support.",
     },
     {
-        key: "2",
+        id: "2",
         question: "Can I use the coworking space on weekends and after hours",
         answer: "Yes, our coworking space is available for use on weekends and after hours, offering you the flexibility to work whenever it suits your schedule best.",
     },
     {
-        key: "3",
+        id: "3",
         question: "How do I book meeting rooms, and is there an additional cost",
         answer: "You can book meeting rooms easily through our online system or by contacting our staff directly. The cost depends on your membership plan, with some including free access and others requiring an additional fee.",
     },
     {
-        key: "4",
+        id: "4",
         question: "Are there any networking or community events held at the coworking space",
         answer: "Yes, we regularly host networking and community events at our coworking space. These events provide opportunities for members to connect, collaborate, and grow their professional networks.",
     },
     {
-        key: "5",
+        id: "5",
         question: "Can I bring guests or clients to the coworking space",
         answer: "Absolutely! You're welcome to bring guests or clients to our coworking space. Just make sure to check our guest policy for any specific guidelines or restrictions.",
     },
     {
-        key: "6",
+        id: "6",
         question: "Is parking available at the coworking space",
         answer: "Yes, parking is available at our coworking space for the convenience of our members and visitors.",
     },

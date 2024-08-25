@@ -31,7 +31,7 @@ function Accordion({ faqs }) {
             {faqs.map((faq, index) => {
                 return (
                     <AccordionItem
-                        key={faq.key}
+                        key={faq.id}
                         question={faq.question}
                         answer={faq.answer}
                         isOpen={activeIndex === index}

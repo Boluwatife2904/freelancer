@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Audience from "./components/Audience/Index";
 import FAQs from "./components/FAQs";
 import Footer from "./components/Footer/index";
@@ -8,6 +9,7 @@ import Testimonial from "./components/Testimonial";
 function App() {
     return (
         <>
+            <About />
             <Audience />
             <Services />
             <Testimonial />

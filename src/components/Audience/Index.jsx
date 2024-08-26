@@ -3,7 +3,7 @@ import { Monitor, User, Book1, Profile2User } from "iconsax-react";
 const audiences = [
     { id: "1", icon: <User className="size-4 lg:size-6" />, title: "Freelancers", position: "left-[17px] -top-[18px]" },
     { id: "2", icon: <Book1 className="size-4 lg:size-6" />, title: "Students", position: "right-1 -top-[11px]" },
-    { id: "3", icon: <Monitor className="size-4 lg:size-6" />, title: "Remote workers", position: "-bottom-7 lg:-bottom-1 left-0 lg:-left-[74px]" },
+    { id: "3", icon: <Monitor className="size-4 lg:size-6" />, title: "Remote workers", position: "-bottom-7 lg:-bottom-1 left-3 lg:-left-[74px]" },
     { id: "4", icon: <Profile2User className="size-4 lg:size-6" />, title: "Corporate employees", position: "lg:-bottom-[14px] lg:-right-[139px]" },
 ];
 

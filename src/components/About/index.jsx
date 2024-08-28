@@ -20,6 +20,8 @@ function AboutImages(props) {
                 breakpoints: {
                     600: { gap: "16px", perPage: 2 },
                     800: { gap: "16px", perPage: 3 },
+                    1280: { gap: "16px", perPage: 3 },
+                    1600: { gap: "16px", perPage: 6 },
                 },
             }}>
             {images.map((value, index) => (

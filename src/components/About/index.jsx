@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
@@ -12,14 +11,14 @@ function AboutImages(props) {
             extensions={{ AutoScroll }}
             options={{
                 type: "loop",
-                gap: "50px",
+                gap: "16px",
                 perPage: 1,
                 arrows: false,
                 pagination: false,
                 direction,
                 mediaQuery: "min",
                 breakpoints: {
-                    600: { gap: "120px", perPage: 2 },
+                    600: { gap: "16px", perPage: 2 },
                     800: { gap: "16px", perPage: 3 },
                 },
             }}>

@@ -23,6 +23,9 @@ function AboutImages(props) {
                     1280: { gap: "16px", perPage: 3 },
                     1600: { gap: "16px", perPage: 6 },
                 },
+                autoScroll: {
+                    pauseOnHover: false,
+                },
             }}>
             {images.map((value, index) => (
                 <SplideSlide key={index} className>

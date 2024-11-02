@@ -29,6 +29,9 @@ function Team() {
                             perPage: 20,
                             arrows: false,
                             pagination: false,
+                            autoScroll: {
+                                pauseOnHover: false,
+                            },
                         }}>
                         {team.map((member) => {
                             return (

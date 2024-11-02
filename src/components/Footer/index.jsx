@@ -55,7 +55,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="flex flex-col gap-10">
-                        <h1 className="text-[18.9vw] 2xl:text-[272px] text-white py-10 border-t border-b border-[#989898] leading-none">Freelancer</h1>
+                        <h1 className="text-[15.9vw] xl:text-[18.13vw] 2xl:text-[272px] text-white py-10 border-t border-b border-[#989898] leading-none">Freelancer</h1>
                         <div className="flex justify-between flex-wrap gap-3">
                             <ul className="flex gap-x-10 gap-y-4 w-fit">
                                 {bottomLinks.map((link) => {

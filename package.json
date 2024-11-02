@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "gsap": "^3.12.5",
     "iconsax-react": "^0.0.8",
+    "lenis": "^1.1.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-plugin-svgr": "^4.2.0"

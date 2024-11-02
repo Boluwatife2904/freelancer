@@ -1,6 +1,6 @@
 function Testimonial() {
     return (
-        <section className="min-h-[500px] lg:min-h-[768px] flex items-end bg-cover bg-top bg-no-repeat bg-[url('/public/images/testimonial.webp')]">
+        <section className="min-h-[500px] lg:min-h-[768px] flex items-end bg-cover bg-top bg-no-repeat bg-[url('/images/testimonial.webp')]">
             <div className="app-container">
                 <div className="max-w-[757px] text-2xl md:text-3xl lg:text-[36px] -tracking-[2%] md:leading-[44px] pb-20 space-y-8 text-white">
                     <p className="font-light">

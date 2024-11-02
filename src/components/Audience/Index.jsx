@@ -1,4 +1,8 @@
 import { Monitor, User, Book1, Profile2User } from "iconsax-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const audiences = [
     { id: "1", icon: <User className="size-4 lg:size-6" />, title: "Freelancers", position: "left-[17px] -top-[18px]" },
@@ -8,17 +12,37 @@ const audiences = [
 ];
 
 function Audience() {
+    useGSAP(() => {
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".audience",
+                start: "top top",
+                end: "bottom top",
+                scrub: 1,
+                pin: ".audience",
+                toggleActions: "play complete complete complete",
+                // once: true,
+            },
+        });
+        timeline
+            .from(".audience-title", { y: 100 })
+            .from(".audience-tag-1", { y: 300 }, 0)
+            .from(".audience-tag-2", { y: 450 }, 0)
+            .from(".audience-tag-3", { y: 600 }, 0)
+            .from(".audience-tag-4", { y: 800 }, 0);
+    }, []);
+
     return (
-        <section className="bg-[#FE5824] flex items-center justify-center text-center py-[225px] overflow-hidden">
+        <section className="audience bg-[#FE5824] min-h-screen flex items-center justify-center text-center py-[225px] overflow-hidden">
             <div className="max-w-[516px] lg:max-w-[858px] mx-auto px-5 relative">
-                <h6 className="text-white font-medium text-[46px] leading-[54px] sm:text-[52px] md:text-[60px] lg:text-[120px] lg:leading-[106px] -tracking-[2%]">
+                <h6 className="text-white audience-title font-medium text-[46px] leading-[54px] sm:text-[52px] md:text-[60px] lg:text-[120px] lg:leading-[106px] -tracking-[2%]">
                     Open doors, diverse minds: welcomes all
                 </h6>
 
                 {audiences.map((audience) => (
                     <span
                         key={audience.id}
-                        className={`bg-black text-white p-2 rounded-lg inline-flex items-center gap-2 text-sm md:text-base lg:text-xl font-normal leading-6 absolute ${audience.position}`}>
+                        className={`bg-black audience-tag-${audience.id} text-white p-2 rounded-lg inline-flex items-center gap-2 text-sm md:text-base lg:text-xl font-normal leading-6 absolute ${audience.position}`}>
                         {audience.icon}
                         {audience.title}
                     </span>

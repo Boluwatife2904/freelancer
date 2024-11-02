@@ -25,14 +25,14 @@ function Audience() {
         });
         timeline
             .from(".audience-title", { y: 100 })
-            .from(".audience-tag-1", { y: 300 }, 0)
-            .from(".audience-tag-2", { y: 450 }, 0)
+            .from(".audience-tag-1", { y: 380 }, 0)
+            .from(".audience-tag-2", { y: 490 }, 0)
             .from(".audience-tag-3", { y: 600 }, 0)
             .from(".audience-tag-4", { y: 800 }, 0);
     }, []);
 
     return (
-        <section className="audience bg-[#FE5824] h-screen flex items-center justify-center text-center">
+        <section className="audience bg-[#FE5824] min-h-[100dvh] flex items-center justify-center text-center">
             <div className="max-w-[516px] lg:max-w-[858px] mx-auto px-5 relative">
                 <h6 className="text-white audience-title font-medium text-[46px] leading-[54px] sm:text-[52px] md:text-[60px] lg:text-[120px] lg:leading-[106px] -tracking-[2%]">
                     Open doors, diverse minds: welcomes all
